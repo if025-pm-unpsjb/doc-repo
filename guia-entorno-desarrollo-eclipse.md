@@ -14,7 +14,7 @@ Tabla de Contenidos:
 ## GNU MCU Eclipse
 Como primer paso, se instalará Eclipse CDT, el GNU ARM Embedded Toolchain, Windows Build Tools (si se utiliza Windows), Java (en caso de no estar ya instalado), y la serie de extensiones [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/) (anteriormente denominadas GNU ARM Eclipse).
 
-Para esto, recomendamos seguir paso a paso la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
+Para esto, recomendamos seguir **paso a paso** la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
 * No es necesario realizar los pasos para instalar SEGGER J-Link o QEMU.
 
 Para referencia, a continuación se enumeran las guías de instalación a seguir en la guía anterior, en el orden recomendado en la misma:
