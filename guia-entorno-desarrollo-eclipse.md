@@ -80,7 +80,7 @@ En esta guía solo se utilizarán comandos básicos de Git. Se pueden consultar 
 ---
 
 ## Proyecto de prueba
-* Importar y compilar el [proyecto de prueba para la placa LPC1768](proyecto-prueba-lpc1768.md).
+* Para probar que todo funcione correctamente, importar y compilar el [proyecto de prueba para la placa LPC1768](https://github.com/if025-pm-unpsjb/mbed-blinky-makefile).
 
 ---
 
