@@ -19,7 +19,7 @@ Para esto, recomendamos seguir **paso a paso** la guía de instalación de [GNU 
 
 Para referencia, a continuación se enumeran las guías de instalación a seguir en la guía anterior, en el orden recomendado en la misma:
 * [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/)
-* [Windows Build Tools](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/)
+* [Windows Build Tools](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/) (requerido sólo para Windows).
 * [OpenOCD](https://gnu-mcu-eclipse.github.io/openocd/install)
 * [Eclipse CDT](https://gnu-mcu-eclipse.github.io/plugins/install/)
 * [GNU ARM Eclipse Plug-ins](https://gnu-mcu-eclipse.github.io/plugins/install/)
