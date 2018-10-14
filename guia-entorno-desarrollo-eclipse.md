@@ -56,12 +56,12 @@ $
 ```
 Luego, para instalar pyOCD, ejecutar desde una linea de comandos:
 ```
-$ pip install pyocd
+$ pip install -U pyocd
 ```
 Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecutar el siguiente comando desde una linea de comandos, para obtener la versión instalada:
 ```
 $ pyocd-gdbserver --version
-0.8.1a1
+0.12.0
 $
 ```
 
