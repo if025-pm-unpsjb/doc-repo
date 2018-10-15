@@ -44,7 +44,7 @@ Instalar la aplicación [Percepio Tracealyzer para FreeRTOS](https://percepio.co
 
 ## pyOCD
 
-[PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para programar y depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP, mediante un servidor gdb. Puede se utilizada como reemplazo de OpenOCD, al momento de trabajar con placas mbed. Require Python 2.7.9 o Python 3.6.0, o posterior.
+[PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb. Puede se utilizada como reemplazo de OpenOCD, al momento de trabajar con placas mbed. Require Python 2.7.9 o Python 3.6.0, o posterior.
 
 *Nota*: utilizaremos la versión 0.10, ya que con las posteriores se han encontrado problemas para trabajar con las placas mbed LPC1768.
 
@@ -66,7 +66,7 @@ Descargar Git desde [https://git-scm.com](https://git-scm.com) e instalarlo.
 
 Se puede utilizar la interfaza gráfica `git-gui` ya incluida con Git, o seleccionar algún [cliente de terceros](https://git-scm.com/downloads/guis).
 
-En esta guía solo se utilizarán comandos básicos de Git. Se pueden consultar estos tutoriales para conocer con más detalle su operación:
+Se pueden consultar estos tutoriales para aprender más acerca de Git:
 * Git in 15 minutes: [https://try.github.io/](https://try.github.io/)
 * Colección de tutoriales: [https://www.atlassian.com/git/tutorials](https://www.atlassian.com/git/tutorials)
 * Git Tutorial: [https://git-scm.com/docs/gittutorial](https://git-scm.com/docs/gittutorial)
