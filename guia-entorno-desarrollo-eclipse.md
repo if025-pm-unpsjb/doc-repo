@@ -18,11 +18,12 @@ Para evitar inconvenientes o demoras, recomendamos realizar una instalación sig
 * [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Descargar la versión más reciente distribuida por el proyecto, y seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install).
 * [Windows Build Tools](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/) (requerido sólo para Windows). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/#manual-install).
 * [OpenOCD](https://gnu-mcu-eclipse.github.io/openocd/install). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/openocd/install/#manual-install).
+* [QEMU](https://gnu-mcu-eclipse.github.io/qemu/install/). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/qemu/install/#manual-install).
 * [Eclipse CDT](https://gnu-mcu-eclipse.github.io/plugins/install/). Descargar la versión más reciente de _GNU MCU Eclipse IDE for C/C++ Developers_ distribuida por el proyecto, que contiene los plug-ins necesarios.
 * [GNU ARM Eclipse Plug-ins](https://gnu-mcu-eclipse.github.io/plugins/install/)
 * [Configuración adicional del workspace](https://gnu-mcu-eclipse.github.io/eclipse/workspace/preferences) (aunque no es obligatorio, es recomendado)
 
-No es necesario por el momento realizar los pasos para instalar SEGGER J-Link o QEMU.
+No es necesario por el momento realizar los pasos para instalar SEGGER J-Link.
 
 Si se desea realizar otra configuración, por ejemplo utilizar una versión de Eclipse ya instalada, recomendamos seguir **paso a paso** la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
 
