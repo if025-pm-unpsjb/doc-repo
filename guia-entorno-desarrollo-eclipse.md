@@ -46,14 +46,16 @@ Instalar la aplicación [Percepio Tracealyzer para FreeRTOS](https://percepio.co
 
 [PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para programar y depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP, mediante un servidor gdb. Puede se utilizada como reemplazo de OpenOCD, al momento de trabajar con placas mbed. Require Python 2.7.9 o Python 3.6.0, o posterior.
 
+*Nota*: utilizaremos la versión 0.10, ya que con las posteriores se han encontrado problemas para trabajar con las placas mbed LPC1768.
+
 Para instalar pyOCD, ejecutar desde una linea de comandos:
 ```
-$ pip install -U pyocd
+$ pip install -U pyocd==0.10
 ```
 Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecutar el siguiente comando desde una linea de comandos, para obtener la versión instalada:
 ```
 $ pyocd-gdbserver --version
-0.12.0
+0.10.0
 $
 ```
 
