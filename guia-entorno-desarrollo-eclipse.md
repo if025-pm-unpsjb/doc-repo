@@ -14,8 +14,10 @@ Tabla de Contenidos:
 ## GNU MCU Eclipse
 Como primer paso, se instalará Eclipse CDT, el GNU ARM Embedded Toolchain, Windows Build Tools (si se utiliza Windows), Java (en caso de no estar ya instalado), y la serie de extensiones [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/) (anteriormente denominadas GNU ARM Eclipse).
 
-Para evitar inconvenientes o demoras, recomendamos realizar una instalación siguiendo estas guías en este orden, y con las aclaraciones indicadas:
-* [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Descargar la versión más reciente distribuida por el proyecto, y seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install).
+Para evitar inconvenientes o demoras, recomendamos realizar una instalación siguiendo las siguientes guías, en orden presentado, y atendiendo a las aclaraciones indicadas. La idea es instalar los programas necesarios utilizando las versiones que ofrece GNU MCU Eclipse, utilizando siempre que sea posible las distribuciones en archivos comprimidos, que no requieren de una instalación en el sistema. De esta manera, se utilizarán las versiones recomendadas, y se evitarán en lo posible conflictos con instalaciones previas.
+
+Guias de instalación a seguir:
+* [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install), instalando la versión más reciente distribuida por el proyecto.
 * [Windows Build Tools](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/) (requerido sólo para Windows). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/#manual-install).
 * [OpenOCD](https://gnu-mcu-eclipse.github.io/openocd/install). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/openocd/install/#manual-install).
 * [QEMU](https://gnu-mcu-eclipse.github.io/qemu/install/). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/qemu/install/#manual-install).
