@@ -17,7 +17,7 @@ Como primer paso, se instalará Eclipse CDT, el GNU ARM Embedded Toolchain, Wind
 Para evitar inconvenientes, recomendamos realizar la instalación siguiendo las siguientes guías, en el orden presentado, y atendiendo a las aclaraciones indicadas. De esta manera, se instalarán los programas necesarios utilizando las versiones que ofrece GNU MCU Eclipse, empleando, siempre que sea posible, los paquetes _stand-alone_, que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas, y es más sencilla la actualización o eliminación del entorno.
 
 Guias de instalación a seguir:
-* [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install), instalando la versión más reciente [distribuida por el proyecto](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases).
+* [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install), instalando la versión más reciente distribuida por el proyecto.
 * [Windows Build Tools](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/) (requerido sólo para Windows). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/#manual-install).
 * [OpenOCD](https://gnu-mcu-eclipse.github.io/openocd/install). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/openocd/install/#manual-install).
 * [QEMU](https://gnu-mcu-eclipse.github.io/qemu/install/). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/qemu/install/#manual-install).
@@ -26,7 +26,7 @@ Guias de instalación a seguir:
 
 No es necesario por el momento realizar los pasos para instalar SEGGER J-Link.
 
-Si se desea realizar otra configuración, por ejemplo utilizar una versión de Eclipse ya instalada, recomendamos seguir **paso a paso** la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
+Si se desea realizar la instalación de otra manera, por ejemplo utilizando una versión de Eclipse que ya se tenga instalada, recomendamos seguir **paso a paso** la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
 
 ---
 
