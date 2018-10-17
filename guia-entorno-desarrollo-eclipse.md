@@ -3,7 +3,7 @@ Esta documento presenta una una guía de instalación y configuración de un ent
 
 Tabla de Contenidos:
 - [GNU MCU Eclipse](#gnu-mcu-eclipse)
-- [Plug-ins adicionales](#plug-ins-adicionales)
+- [FreeRTOS Task Aware Debugger](#freertos-task-aware-debugger)
 - [Percepio Tracealyzer para FreeRTOS](#percepio-tracealyzer-para-freertos)
 - [pyOCD](#pyocd)
 - [Git](#git)
@@ -14,31 +14,38 @@ Tabla de Contenidos:
 ## GNU MCU Eclipse
 Como primer paso, se instalará Eclipse CDT, el GNU ARM Embedded Toolchain, Windows Build Tools (si se utiliza Windows), Java (en caso de no estar ya instalado), y la serie de extensiones [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/) (anteriormente denominadas GNU ARM Eclipse).
 
-Para evitar inconvenientes o demoras, recomendamos realizar una instalación siguiendo estas guías en este orden, y con las aclaraciones indicadas:
-* [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Descargar la versión más reciente distribuida por el proyecto, y seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install).
+Para evitar inconvenientes, recomendamos realizar la instalación siguiendo las siguientes guías, en el orden presentado, y atendiendo a las aclaraciones indicadas. De esta manera, se instalarán los programas necesarios utilizando las versiones que ofrece GNU MCU Eclipse, empleando, siempre que sea posible, los paquetes _stand-alone_, que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas, y es más sencilla la actualización o eliminación del entorno.
+
+Guias de instalación a seguir:
+* [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install), instalando la versión más reciente distribuida por el proyecto.
 * [Windows Build Tools](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/) (requerido sólo para Windows). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/windows-build-tools/install/#manual-install).
 * [OpenOCD](https://gnu-mcu-eclipse.github.io/openocd/install). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/openocd/install/#manual-install).
 * [QEMU](https://gnu-mcu-eclipse.github.io/qemu/install/). Seguir las instrucciones en [Manual install](https://gnu-mcu-eclipse.github.io/qemu/install/#manual-install).
 * [Eclipse CDT](https://gnu-mcu-eclipse.github.io/plugins/install/). Descargar la versión más reciente de _GNU MCU Eclipse IDE for C/C++ Developers_ distribuida por el proyecto, que contiene los plug-ins necesarios.
 * [Configuración adicional del workspace](https://gnu-mcu-eclipse.github.io/eclipse/workspace/preferences) (aunque no es obligatorio, es recomendado)
 
-No es necesario por el momento realizar los pasos para instalar SEGGER J-Link.
+_Nota_: No es necesario por el momento realizar los pasos para instalar SEGGER J-Link.
 
-Si se desea realizar otra configuración, por ejemplo utilizar una versión de Eclipse ya instalada, recomendamos seguir **paso a paso** la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
+Si se desea realizar la instalación de otra manera, por ejemplo utilizando una versión de Eclipse que ya se tenga instalada, recomendamos seguir **paso a paso** la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
 
 ---
 
-## Plug-ins adicionales
-Instalar los siguientes plugins:
-* [FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/) de NXP.
-* [Percepio FreeRTOS Tracealyzer Plugin](https://percepio.com/docs/FreeRTOS/manual/Recorder.html#eclipse). Consultar esta [guía](https://mcuoneclipse.com/2017/03/08/percepio-freertos-tracealyzer-plugin-for-eclipse/) para información adicional.
+## FreeRTOS Task Aware Debugger
+Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo estado de las tareas, memoria utilizada, _timers_, etc.
+
+Para instalarlo, seguir las instrucciones en este sitio: [FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/).
 
 ---
 
 ## Percepio Tracealyzer para FreeRTOS
-Instalar la aplicación [Percepio Tracealyzer para FreeRTOS](https://percepio.com/tz/freertostrace/):
-* Para Windows ofrece un instalador.
-* Para Linux / MacOS, un paquete `tar.gz`.
+[Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente.
+
+Descarga la aplicación desde [la página de Percepio](https://percepio.com/tz/freertostrace/), e instalarla. Para Windows ofrece un instalador, y para Linux / MacOS, un paquete `tar.gz` con los ejecutables correspondientes.
+
+### Plugin para Eclipse
+Esta herramienta ofrece también un plugin para Eclipse que facilita generar trazas desde una sesión de _debug_. Para instalarlo, seguir cualquiera de las siguientes guía de instalación:
+* [Percepio FreeRTOS Tracealyzer Plugin](https://percepio.com/docs/FreeRTOS/manual/Recorder.html#eclipse)
+* [Percepio FreeRTOS Tracealyzer for Eclipse](https://mcuoneclipse.com/2017/03/08/percepio-freertos-tracealyzer-plugin-for-eclipse/)
 
 ---
 
