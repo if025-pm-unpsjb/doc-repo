@@ -14,7 +14,7 @@ Tabla de Contenidos:
 ## GNU MCU Eclipse
 Como primer paso, se instalará Eclipse CDT, el GNU ARM Embedded Toolchain, Windows Build Tools (si se utiliza Windows), Java (en caso de no estar ya instalado), y la serie de extensiones [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/) (anteriormente denominadas GNU ARM Eclipse).
 
-Para evitar inconvenientes o demoras, recomendamos realizar una instalación siguiendo las siguientes guías, en orden presentado, y atendiendo a las aclaraciones indicadas. La idea es instalar los programas necesarios utilizando las versiones que ofrece GNU MCU Eclipse, utilizando siempre que sea posible las distribuciones en archivos comprimidos, que no requieren de una instalación en el sistema. De esta manera, se utilizarán las versiones recomendadas, y se evitarán en lo posible conflictos con instalaciones previas.
+Para evitar inconvenientes, recomendamos realizar la instalación siguiendo las siguientes guías, en el orden presentado, y atendiendo a las aclaraciones indicadas. De esta manera, se instalarán los programas necesarios utilizando las versiones que ofrece GNU MCU Eclipse, empleando, siempre que sea posible, los paquetes _stand-alone_, que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas, y es más sencilla la actualización o eliminación del entorno.
 
 Guias de instalación a seguir:
 * [GNU ARM Embedded Toolchain](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/). Seguir las instrucciones en la sección [Manual install](https://gnu-mcu-eclipse.github.io/toolchain/arm/install/#manual-install), instalando la versión más reciente distribuida por el proyecto.
