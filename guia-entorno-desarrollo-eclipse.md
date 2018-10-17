@@ -3,7 +3,7 @@ Esta documento presenta una una guía de instalación y configuración de un ent
 
 Tabla de Contenidos:
 - [GNU MCU Eclipse](#gnu-mcu-eclipse)
-- [FreeRTOS Task Aware Debugger (TAD)](#freertos-task-aware-debugger-(tad))
+- [FreeRTOS Task Aware Debugger](#freertos-task-aware-debugger)
 - [Percepio Tracealyzer para FreeRTOS](#percepio-tracealyzer-para-freertos)
 - [pyOCD](#pyocd)
 - [Git](#git)
@@ -30,7 +30,7 @@ Si se desea realizar la instalación de otra manera, por ejemplo utilizando una 
 
 ---
 
-## FreeRTOS Task Aware Debugger (TAD)
+## FreeRTOS Task Aware Debugger
 Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo estado de las tareas, memoria utilizada, _timers_, etc.
 
 Para instalarlo, seguir las instrucciones en este sitio: [FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/).
