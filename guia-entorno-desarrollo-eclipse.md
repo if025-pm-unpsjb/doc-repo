@@ -24,23 +24,28 @@ Guias de instalación a seguir:
 * [Eclipse CDT](https://gnu-mcu-eclipse.github.io/plugins/install/). Descargar la versión más reciente de _GNU MCU Eclipse IDE for C/C++ Developers_ distribuida por el proyecto, que contiene los plug-ins necesarios.
 * [Configuración adicional del workspace](https://gnu-mcu-eclipse.github.io/eclipse/workspace/preferences) (aunque no es obligatorio, es recomendado)
 
-No es necesario por el momento realizar los pasos para instalar SEGGER J-Link.
+_Nota_: No es necesario por el momento realizar los pasos para instalar SEGGER J-Link.
 
 Si se desea realizar la instalación de otra manera, por ejemplo utilizando una versión de Eclipse que ya se tenga instalada, recomendamos seguir **paso a paso** la guía de instalación de [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/install/).
 
 ---
 
-## Plug-ins adicionales
-Instalar los siguientes plugins:
-* [FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/) de NXP.
-* [Percepio FreeRTOS Tracealyzer Plugin](https://percepio.com/docs/FreeRTOS/manual/Recorder.html#eclipse). Consultar esta [guía](https://mcuoneclipse.com/2017/03/08/percepio-freertos-tracealyzer-plugin-for-eclipse/) para información adicional.
+## FreeRTOS Task Aware Debugger (TAD)
+Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo estado de las tareas, memoria utilizada, _timers_, etc.
+
+Para instalarlo, seguir las instrucciones en este sitio: [FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/).
 
 ---
 
 ## Percepio Tracealyzer para FreeRTOS
-Instalar la aplicación [Percepio Tracealyzer para FreeRTOS](https://percepio.com/tz/freertostrace/):
-* Para Windows ofrece un instalador.
-* Para Linux / MacOS, un paquete `tar.gz`.
+[Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente.
+
+Descarga la aplicación desde [la página de Percepio](https://percepio.com/tz/freertostrace/), e instalarla. Para Windows ofrece un instalador, y para Linux / MacOS, un paquete `tar.gz` con los ejecutables correspondientes.
+
+### Plugin para Eclipse
+Esta herramienta ofrece también un plugin para Eclipse que facilita generar trazas desde una sesión de _debug_. Para instalarlo, seguir cualquiera de las siguientes guía de instalación:
+* [Percepio FreeRTOS Tracealyzer Plugin](https://percepio.com/docs/FreeRTOS/manual/Recorder.html#eclipse)
+* [Percepio FreeRTOS Tracealyzer for Eclipse](https://mcuoneclipse.com/2017/03/08/percepio-freertos-tracealyzer-plugin-for-eclipse/)
 
 ---
 
