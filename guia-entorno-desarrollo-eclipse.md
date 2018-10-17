@@ -3,7 +3,7 @@ Esta documento presenta una una guía de instalación y configuración de un ent
 
 Tabla de Contenidos:
 - [GNU MCU Eclipse](#gnu-mcu-eclipse)
-- [Plug-ins adicionales](#plug-ins-adicionales)
+- [FreeRTOS Task Aware Debugger (TAD)](#freertos-task-aware-debugger-(tad))
 - [Percepio Tracealyzer para FreeRTOS](#percepio-tracealyzer-para-freertos)
 - [pyOCD](#pyocd)
 - [Git](#git)
