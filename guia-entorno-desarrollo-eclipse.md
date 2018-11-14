@@ -82,4 +82,6 @@ Se pueden consultar estos tutoriales para aprender más acerca de Git:
 ---
 
 ## Proyecto de prueba
-Para probar que todo funcione correctamente, importar y compilar el [proyecto de prueba para la placa LPC1768](https://github.com/if025-pm-unpsjb/mbed-blinky-makefile).
+Para probar que todo funcione correctamente, probar alguno de los siguientes proyectos:
+* [Proyecto de prueba para la placa LPC1768](https://github.com/if025-pm-unpsjb/mbed-blinky-makefile).
+* [Proyecto de prueba para la placa EDU-CIAA-NXP](https://github.com/if025-pm-unpsjb/ciaa-example-makefile).
