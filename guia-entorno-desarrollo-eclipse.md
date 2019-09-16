@@ -53,11 +53,23 @@ Esta herramienta ofrece también un plugin para Eclipse que facilita generar tra
 
 [PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb. Puede se utilizada como reemplazo de OpenOCD, al momento de trabajar con placas mbed. Require Python 2.7.9 o Python 3.6.0, o posterior.
 
-*Nota*: utilizaremos la versión 0.10, ya que con las posteriores se han encontrado problemas para trabajar con las placas mbed LPC1768.
+Utilizaremos la versión 0.10 de PyOCD, ya que con las posteriores se han encontrado problemas para trabajar con las placas mbed LPC1768. Como PyOCD requiere la librería IntervalTree, también con una versión específica, vamos a crear un entorno virtual de Python, para no introducir problemas en la instalación del sistema.
 
-Para instalar pyOCD, ejecutar desde una linea de comandos:
+Primero, desde una línea de comandos, instalar `virtualenv`:
 ```
-$ pip install -U pyocd==0.10
+$ pip install --upgrade virtualenv
+```
+Luego, vamos a crear un entorno desde donde ejecutaremos PyOCD:
+```
+$ virtualenv pyocd-python
+```
+A continuación, activamos el entorno (en Windows, el directorio es `Scripts` en lugar de `bin`):
+```
+$ source pyocd-python/bin/activate
+```
+Para instalar pyOCD y la librería , ejecutar desde una linea de comandos:
+```
+$ pip install -U intervaltree==2.1.0 pyocd==0.10
 ```
 Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecutar el siguiente comando desde una linea de comandos, para obtener la versión instalada:
 ```
