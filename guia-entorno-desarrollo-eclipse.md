@@ -2,12 +2,14 @@
 Esta documento presenta una una guía de instalación y configuración de un entorno de desarrollo basado en [Eclipse](http://www.eclipse.org).
 
 Tabla de Contenidos:
-- [GNU MCU Eclipse](#gnu-mcu-eclipse)
-- [FreeRTOS Task Aware Debugger](#freertos-task-aware-debugger)
-- [Percepio Tracealyzer para FreeRTOS](#percepio-tracealyzer-para-freertos)
-- [pyOCD](#pyocd)
-- [Git](#git)
-- [Proyecto de prueba](#proyecto-de-prueba)
+- [Instalación entorno de desarrollo basado en Eclipse](#instalaci%c3%b3n-entorno-de-desarrollo-basado-en-eclipse)
+  - [GNU MCU Eclipse](#gnu-mcu-eclipse)
+  - [FreeRTOS Task Aware Debugger](#freertos-task-aware-debugger)
+  - [Percepio Tracealyzer para FreeRTOS](#percepio-tracealyzer-para-freertos)
+    - [Plugin para Eclipse](#plugin-para-eclipse)
+  - [pyOCD](#pyocd)
+  - [Git](#git)
+  - [Proyecto de prueba](#proyecto-de-prueba)
 
 ---
 
@@ -63,17 +65,21 @@ Luego, vamos a crear un entorno desde donde ejecutaremos PyOCD:
 ```
 $ virtualenv pyocd-python
 ```
-A continuación, activamos el entorno (en Windows, el directorio es `Scripts` en lugar de `bin`):
+A continuación, activamos el entorno. En Linux, ejecutar el siguiente comando:
 ```
 $ source pyocd-python/bin/activate
 ```
-Para instalar pyOCD y la librería , ejecutar desde una linea de comandos:
+En Windows, ejecutar este comando:
 ```
-$ pip install -U intervaltree==2.1.0 pyocd==0.10
+$ pyocd-python/Scripts/activate
+```
+Luego, la línea de comandos debe cambiar, indicando que estan ejecutando en el nuevo ambiente virtual. Para instalar pyOCD y la librería, ejecutar desde la linea de comandos:
+```
+(pyocd-python) $ pip install -U intervaltree==2.1.0 pyocd==0.10
 ```
 Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecutar el siguiente comando desde una linea de comandos, para obtener la versión instalada:
 ```
-$ pyocd-gdbserver --version
+(pyocd-python)$ pyocd-gdbserver --version
 0.10.0
 $
 ```
