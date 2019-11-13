@@ -4,6 +4,7 @@ Este repositorio contiene guías, tutoriales y otra documentación de la cátedr
 
 ## Guías
 * [Instalación de entorno de desarrollo basado en Eclipse](guia-entorno-desarrollo-eclipse.md).
+* [Instalación y configuración de Perceptio Tracealyzer](eclipse-tracealyzer.md)
 
 ## Proyectos de prueba
 * [mbed LPC1768 blinky](https://github.com/if025-pm-unpsjb/mbed-blinky-makefile)

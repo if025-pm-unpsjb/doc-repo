@@ -40,14 +40,7 @@ Para instalarlo, seguir las instrucciones en este sitio: [FreeRTOS Task Aware De
 ---
 
 ## Percepio Tracealyzer para FreeRTOS
-[Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente.
-
-Descarga la aplicación desde [la página de Percepio](https://percepio.com/tz/freertostrace/), e instalarla. Para Windows ofrece un instalador, y para Linux / MacOS, un paquete `tar.gz` con los ejecutables correspondientes.
-
-### Plugin para Eclipse
-Esta herramienta ofrece también un plugin para Eclipse que facilita generar trazas desde una sesión de _debug_. Para instalarlo, seguir cualquiera de las siguientes guía de instalación:
-* [Percepio FreeRTOS Tracealyzer Plugin](https://percepio.com/docs/FreeRTOS/manual/Recorder.html#eclipse)
-* [Percepio FreeRTOS Tracealyzer for Eclipse](https://mcuoneclipse.com/2017/03/08/percepio-freertos-tracealyzer-plugin-for-eclipse/)
+[Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente. Para instalarlo y configurarlo, seguir la [siguiente guía](eclipse-tracelyzer.md).
 
 ---
 
