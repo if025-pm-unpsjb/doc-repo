@@ -75,6 +75,7 @@ Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecuta
 0.10.0
 $
 ```
+En caso de que existan problemas para reconocer la placa mbed LPC1768 en Linux, seguir los pasos indicados [aquí](https://github.com/mbedmicro/pyOCD/tree/master/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev.
 
 ---
 
