@@ -17,7 +17,7 @@ Para evitar inconvenientes, realizar la instalación siguiendo las siguientes gu
 
 - Crear un directorio `setr` (por ejmplo `C:\setr` en Windows o `~/setr` en Linux), donde se van a descomprimir todos los programas y paquetes necesarios.
 - **Java**: si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
-- **Embedded Toolchain**: Seguir las [instrucciones de instalación manual](https://xpack.github.io/arm-none-eabi-gcc/install/#manual-install), pero descomprimiendo el archivo en `setr\arm-none-eabi-gcc`.
+- **Embedded Toolchain**: seguir las [instrucciones de instalación manual](https://xpack.github.io/arm-none-eabi-gcc/install/#manual-install), pero descomprimiendo el archivo en `setr\arm-none-eabi-gcc`.
 - **Windows Build Tools**: este paquete solo es requerido para Windows. Seguir las [instrucciones de instalación manual](https://xpack.github.io/windows-build-tools/install/#manual-install), pero descomprimiendo el archivo en `setr\windows-build-tools`.
 - **QEMU**: seguir las [instrucciones de instalación manual](https://xpack.github.io/qemu-arm/install/#manual-install), pero descomprimiendo el paquete en `setr\qemu-arm`).
 - **Eclipse Embedded CDT**: descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://projects.eclipse.org/projects/iot.embed-cdt/downloads/) y descomprimir el archivo en `setr\eclipse`.
@@ -36,7 +36,7 @@ setr\
 
 ## Configurar Eclipse
 
-Ejecutar Eclipse y cuando solicite la ubicació del _workspace_ indicar el directorio `workspace` anteriormente creado. Luego, abrir las preferencias de Eclipse (**[Window > Preferences]**) y:
+Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el directorio `workspace` anteriormente creado. Luego, abrir las preferencias de Eclipse (**[Window > Preferences]**) y:
 
 - Ir a **[C/C++ > MCU]**:
   - En **[Global Arm Toolchain path]**:
