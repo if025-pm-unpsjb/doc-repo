@@ -13,7 +13,7 @@ Tabla de Contenidos:
 
 ## Instalación del software necesario
 
-Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
+Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
 
 - Crear un directorio `setr` (por ejmplo `C:\setr` en Windows o `~/setr` en Linux), donde se van a descomprimir todos los programas y paquetes necesarios.
 - **Java**: si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
@@ -57,7 +57,14 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 ### Percepio Tracealyzer para FreeRTOS
 [Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente. Para instalarlo y configurarlo, seguir la [siguiente guía](eclipse-tracealyzer.md).
 
-## Proyecto de prueba
+## QEMU
+
+Para ejecutar un proyecto con FreeRTOS, necesitamos instalar QEMU:
+
+- **Windows**: descargar e instalar la última versión desde [este enlace](https://qemu.weilnetz.de/w64/) (versión de 64 bits).
+- **Linux**: seguir las indicaciones en la [página de instalación](https://www.qemu.org/download/#linux) según la distribución.
+
+## Prueba
 
 Para probar que todo funcione correctamente, probar alguno de los siguientes proyectos:
 
