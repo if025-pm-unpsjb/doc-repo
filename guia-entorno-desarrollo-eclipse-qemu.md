@@ -19,7 +19,6 @@ Para evitar inconvenientes, realizar la instalación siguiendo las siguientes gu
 - **Java**: si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
 - **Embedded Toolchain**: seguir las [instrucciones de instalación manual](https://xpack.github.io/arm-none-eabi-gcc/install/#manual-install), pero descomprimiendo el archivo en `setr\arm-none-eabi-gcc`.
 - **Windows Build Tools**: este paquete solo es requerido para Windows. Seguir las [instrucciones de instalación manual](https://xpack.github.io/windows-build-tools/install/#manual-install), pero descomprimiendo el archivo en `setr\windows-build-tools`.
-- **QEMU**: seguir las [instrucciones de instalación manual](https://xpack.github.io/qemu-arm/install/#manual-install), pero descomprimiendo el paquete en `setr\qemu-arm`).
 - **Eclipse Embedded CDT**: descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://projects.eclipse.org/projects/iot.embed-cdt/downloads/) y descomprimir el archivo en `setr\eclipse`.
 - Crear los directorios `workspace` y `src` dentro de `setr`.
 
@@ -31,7 +30,6 @@ setr\
 ├── windows-build-tools\    # Make (solo necesario en Windows)
 ├── workspace\              # Workspace para Eclipse
 ├── src\                    # Aquí descargaremos los proyectos
-└── qemu-arm\               # Emulador 
 ```
 
 ## Configurar Eclipse
@@ -66,7 +64,6 @@ Para ejecutar un proyecto con FreeRTOS, necesitamos instalar QEMU:
 
 ## Prueba
 
-Para probar que todo funcione correctamente, probar alguno de los siguientes proyectos:
+Para probar que todo funcione correctamente, probar el siguiente proyecto, clonandolo o descargandolo en el directorio `src`:
 
-* [Proyecto de prueba para la placa LPC1768](https://github.com/if025-pm-unpsjb/mbed-blinky-makefile).
-* [Proyecto de prueba para la placa EDU-CIAA-NXP](https://github.com/if025-pm-unpsjb/ciaa-example-makefile).
+- [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
