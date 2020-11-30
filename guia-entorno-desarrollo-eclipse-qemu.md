@@ -41,9 +41,6 @@ Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el dire
     - En **Default Toolchain** seleccionar _xPack GNU Arm Embedded GCC_.
     - En **Toolchain folder** indicar el _path_ completo al directorio `setr\arm-none-eabi-gcc\bin`.
   - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `setr\windows-build-tools\bin` (sólo necesario en Windows).
-  - En **[Global QEMU Path]**:
-    - En **Executable** debe decir `qemu-system-gnuarmeclipse` (`.exe` en caso de Windows).
-    - En **Folder** debe indicar el _path_ completo a `setr\qemu-arm\bin`.
   - Hacer clic en **[Apply and Close]**.
 - A continuación, realizar la configuración adicional [indicada aquí](https://gnu-mcu-eclipse.github.io/eclipse/workspace/preferences).
 
@@ -59,7 +56,7 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 
 ## QEMU
 
-Para ejecutar un proyecto con FreeRTOS, necesitamos instalar QEMU:
+Instalar QEMU (un emulador y virtualizador de distintas plataformas):
 
 - **Windows**: descargar e instalar la última versión desde [este enlace](https://qemu.weilnetz.de/w64/) (versión de 64 bits).
 - **Linux**: seguir las indicaciones en la [página de instalación](https://www.qemu.org/download/#linux) según la distribución.
