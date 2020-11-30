@@ -29,7 +29,7 @@ setr\
 ├── arm-none-eabi-gcc\      # Toolchain (compilador, linker, librerias, etc.)
 ├── windows-build-tools\    # Make (solo necesario en Windows)
 ├── workspace\              # Workspace para Eclipse
-├── src\                    # Aquí descargaremos los proyectos
+└── src\                    # Aquí descargaremos los proyectos
 ```
 
 ## Configurar Eclipse
@@ -50,9 +50,11 @@ Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el dire
 ## Plugins adicionales
 
 ### FreeRTOS Task Aware Debugger
+
 Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo estado de las tareas, memoria utilizada, _timers_, etc. Para instalarlo, seguir las instrucciones en este sitio: [FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/).
 
 ### Percepio Tracealyzer para FreeRTOS
+
 [Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente. Para instalarlo y configurarlo, seguir la [siguiente guía](eclipse-tracealyzer.md).
 
 ## QEMU
@@ -64,6 +66,6 @@ Para ejecutar un proyecto con FreeRTOS, necesitamos instalar QEMU:
 
 ## Prueba
 
-Para probar que todo funcione correctamente, probar el siguiente proyecto, clonandolo o descargandolo en el directorio `src`:
+Para probar que todo funcione correctamente, clonar o descargar en un subdirectorio de `src` el siguiente proyecto y seguir las instrucciones:
 
 - [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
