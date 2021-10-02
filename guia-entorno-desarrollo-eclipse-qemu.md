@@ -15,11 +15,11 @@ Tabla de Contenidos:
 
 Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
 
-- Crear un directorio `setr` (por ejmplo `C:\setr` en Windows o `~/setr` en Linux), donde se van a descomprimir todos los programas y paquetes necesarios.
+- Crear un directorio `setr` (por ejmplo `C:\setr` en Windows o `~/setr` en Linux) donde se van a alojar los programas y paquetes necesarios.
 - **Java**: si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
-- **Embedded Toolchain**: seguir las [instrucciones de instalación manual](https://xpack.github.io/arm-none-eabi-gcc/install/#manual-install), pero descomprimiendo el archivo en `setr\arm-none-eabi-gcc`.
-- **Windows Build Tools**: este paquete solo es requerido para Windows. Seguir las [instrucciones de instalación manual](https://xpack.github.io/windows-build-tools/install/#manual-install), pero descomprimiendo el archivo en `setr\windows-build-tools`.
-- **Eclipse Embedded CDT**: descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://projects.eclipse.org/projects/iot.embed-cdt/downloads/) y descomprimir el archivo en `setr\eclipse`.
+- **Embedded Toolchain**: seguir las [instrucciones de instalación manual](https://xpack.github.io/arm-none-eabi-gcc/install/#manual-install), pero descomprimiendo el archivo en `setr/arm-none-eabi-gcc`.
+- **Windows Build Tools**: este paquete solo es requerido para Windows. Seguir las [instrucciones de instalación manual](https://xpack.github.io/windows-build-tools/install/#manual-install), pero descomprimiendo el archivo en `setr/windows-build-tools`.
+- **Eclipse Embedded CDT**: descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://www.eclipse.org/downloads/packages/) y descomprimir el archivo en `setr\eclipse`.
 - Crear los directorios `workspace` y `src` dentro de `setr`.
 
 Una vez descargado los programas, debería quedar una estructura de directorios como la siguiente:
@@ -27,7 +27,7 @@ Una vez descargado los programas, debería quedar una estructura de directorios 
 setr\
 ├── eclipse\                # Eclipse 
 ├── arm-none-eabi-gcc\      # Toolchain (compilador, linker, librerias, etc.)
-├── windows-build-tools\    # Make (solo necesario en Windows)
+├── windows-build-tools\    # Make y otras aplicaciones (solo necesario en Windows)
 ├── workspace\              # Workspace para Eclipse
 └── src\                    # Aquí descargaremos los proyectos
 ```
@@ -39,8 +39,8 @@ Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el dire
 - Ir a **[C/C++ > MCU]**:
   - En **[Global Arm Toolchain path]**:
     - En **Default Toolchain** seleccionar _xPack GNU Arm Embedded GCC_.
-    - En **Toolchain folder** indicar el _path_ completo al directorio `setr\arm-none-eabi-gcc\bin`.
-  - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `setr\windows-build-tools\bin` (sólo necesario en Windows).
+    - En **Toolchain folder** indicar el _path_ completo al directorio `setr/arm-none-eabi-gcc/bin`.
+  - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `setr/windows-build-tools/bin` (sólo necesario en Windows).
   - Hacer clic en **[Apply and Close]**.
 - A continuación, realizar la configuración adicional [indicada aquí](https://gnu-mcu-eclipse.github.io/eclipse/workspace/preferences).
 
