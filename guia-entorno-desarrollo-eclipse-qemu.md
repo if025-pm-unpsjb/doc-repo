@@ -36,7 +36,7 @@ setr\
 
 Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el directorio `workspace` anteriormente creado. Luego, abrir las preferencias de Eclipse (**[Window > Preferences]**) y:
 
-- Ir a **[C/C++ > MCU]**:
+- Ir a **[MCU]**:
   - En **[Global Arm Toolchain path]**:
     - En **Default Toolchain** seleccionar _xPack GNU Arm Embedded GCC_.
     - En **Toolchain folder** indicar el _path_ completo al directorio `setr/arm-none-eabi-gcc/bin`.
