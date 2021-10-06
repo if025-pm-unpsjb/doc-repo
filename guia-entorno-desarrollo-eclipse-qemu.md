@@ -42,13 +42,13 @@ Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el dire
     - En **Toolchain folder** indicar el _path_ completo al directorio `setr/arm-none-eabi-gcc/bin`.
   - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `setr/windows-build-tools/bin` (sólo necesario en Windows).
   - Hacer clic en **[Apply and Close]**.
-- A continuación, realizar la configuración adicional [indicada aquí](https://gnu-mcu-eclipse.github.io/eclipse/workspace/preferences).
+  - A continuación, realizar la configuración adicional [indicada aquí](https://gnu-mcu-eclipse.github.io/eclipse/workspace/preferences).
 
 ## Plugins adicionales
 
 ### FreeRTOS Task Aware Debugger
 
-Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo estado de las tareas, memoria utilizada, _timers_, etc. Para instalarlo, seguir las instrucciones en este sitio: [FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/).
+Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo el estado de las tareas, memoria utilizada, etc. Para instalarlo, seguir las instrucciones en esta [guía](eclipse-freertos-tad.md). 
 
 ### Percepio Tracealyzer para FreeRTOS
 
