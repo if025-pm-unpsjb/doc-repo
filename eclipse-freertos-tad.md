@@ -18,3 +18,6 @@ Eclipse debería empezar a instalar el componente en segundo plano, y en la esqu
 
 Luego que reinicie Eclipse, debería aparecer un nuevo menú **[FreeRTOS]** en la perspectiva de _debugging_.
 
+Otra guía de instalación (en inglés):[FreeRTOS Task Aware Debugger (TAD)](https://mcuoneclipse.com/2016/07/06/freertos-kernel-awareness-for-eclipse-from-nxp/).
+
+
