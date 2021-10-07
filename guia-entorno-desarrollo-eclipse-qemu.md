@@ -59,7 +59,12 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 Instalar QEMU (un emulador y virtualizador de distintas plataformas):
 
 - **Windows**: descargar e instalar la última versión desde [este enlace](https://qemu.weilnetz.de/w64/) (versión de 64 bits).
-- **Linux**: seguir las indicaciones en la [página de instalación](https://www.qemu.org/download/#linux) según la distribución.
+- **Linux**: se puede instalar mediante el administrador de paquetes de la distribución. Por ejemplo, en Ubuntu:
+```
+$ sudo apt install qemu-system-arm 
+```
+
+Para otras distribuciones, seguir las indicaciones en la [página de instalación](https://www.qemu.org/download/#linux). 
 
 ## Prueba
 
