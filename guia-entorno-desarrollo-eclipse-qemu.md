@@ -15,7 +15,7 @@ Tabla de Contenidos:
 
 Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
 
-- Crear un directorio `setr` (por ejmplo `C:\setr` en Windows o `~/setr` en Linux) donde se van a alojar los programas y paquetes necesarios.
+- Crear un directorio `setr` (por ejemplo `C:\setr` en Windows o `~/setr` en Linux) donde se van a alojar los programas y paquetes necesarios.
 - **Java**: si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
 - **Embedded Toolchain**: seguir las [instrucciones de instalación manual](https://xpack.github.io/arm-none-eabi-gcc/install/#manual-install), pero descomprimiendo el archivo en `setr/arm-none-eabi-gcc`.
 - **Windows Build Tools**: este paquete solo es requerido para Windows. Seguir las [instrucciones de instalación manual](https://xpack.github.io/windows-build-tools/install/#manual-install), pero descomprimiendo el archivo en `setr/windows-build-tools`.
@@ -60,6 +60,7 @@ Instalar QEMU (un emulador y virtualizador de distintas plataformas):
 
 - **Windows**: descargar e instalar la última versión desde [este enlace](https://qemu.weilnetz.de/w64/) (versión de 64 bits).
 - **Linux**: se puede instalar mediante el administrador de paquetes de la distribución. Por ejemplo, en Ubuntu:
+
 ```
 $ sudo apt install qemu-system-arm 
 ```
