@@ -2,7 +2,7 @@
 
 ## Instalar Percepio Tracealyzer
 
-Desde la página https://percepio.com/downloads/ descargar la versión **3.1.2** de Tracealyzer. Descargar el archivo `TzForFreeRTOS-3.1.2.tgz`, ya que permiten descomprimir fácilmente en un directorio el programa. Las versiones más nuevas de Tracealyzer requieren registrarse. Una vez descargado, descomprimir el archivo en un directorio a elección. 
+Descargar la versión Tracealyzer desde este [link](https://percepio.com/downloads/TzForFreeRTOS-3.1.2.tgz). Vamos a emplear la versión **3.1.2** ya que las versiones más recientes de Tracealyzer requieren registrarse y no ofrecen una versión gratuita de prueba. Descomprimir el archivo en `setr/tracealyzer`. 
 
 Para comprobar que funciona correctamente, ejecutar el archivo `TzForFreeRTOS.exe`. En la ventana que aparece a continuación, hacer clic en el botón **[Free Edition]**. En la siguiente pantalla, hacer clic en la opción **I accept the EULA** y luego en el botón **[Start Application]**. A continuación debería ejecutar la aplicación.
 
