@@ -43,7 +43,7 @@ Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el dire
   - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `setr/windows-build-tools/bin` (sólo necesario en Windows).
   - Hacer clic en **[Apply and Close]**.
 
-- Aplicar también los siguientes cambios a la configuración: [indicada aquí]
+- Aplicar también los siguientes cambios a la configuración:
     - [Use active build configuration for indexing](https://eclipse-embed-cdt.github.io/eclipse/workspace/preferences/#use-active-build-configuration-for-indexing)
     - [Save automatically](https://eclipse-embed-cdt.github.io/eclipse/workspace/preferences/#save-automatically)
     - [Text file encoding](https://eclipse-embed-cdt.github.io/eclipse/workspace/preferences/#text-file-encoding)
