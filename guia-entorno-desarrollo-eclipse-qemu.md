@@ -94,7 +94,7 @@ $ python2 -m ensurepip --upgrade
 ```
 O bien:
 ```
-$ wget https://bootstrap.pypa.io/get-pip.py 
+$ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 $ python2 get-pip.py
 ```
 Una vez que se tiene Python2 instalado, desde una línea de comandos, instalar `virtualenv`:
@@ -115,11 +115,11 @@ $ pyocd-0.10/Scripts/activate
 ```
 Luego, la línea de comandos debe cambiar, indicando que estan ejecutando en el nuevo ambiente virtual. Para instalar pyOCD y la librería, ejecutar desde la linea de comandos:
 ```
-(pyocd-python) $ pip install -U intervaltree==2.1.0 pyocd==0.10
+(pyocd-0.10) $ pip install -U intervaltree==2.1.0 pyocd==0.10
 ```
 Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecutar el siguiente comando desde una linea de comandos, para obtener la versión instalada:
 ```
-(pyocd-python)$ pyocd-gdbserver --version
+(pyocd-0.10)$ pyocd-gdbserver --version
 0.10.0
 $
 ```
