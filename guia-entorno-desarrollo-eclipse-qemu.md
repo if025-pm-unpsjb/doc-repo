@@ -9,6 +9,7 @@ Tabla de Contenidos:
 - [Plugins adicionales](#plugins-adicionales)
 - [QEMU](#qemu)
 - [pyOCD](#pyocd)
+- [Configuración adicional](#configuracion-adicional)
 - [Proyecto de prueba](#proyecto-de-prueba)
 
 ---
@@ -128,6 +129,15 @@ En caso de que existan problemas para reconocer la placa mbed LPC1768 en Linux, 
 ### FRDM-K64F y otras placas mbed
 
 Para estas placas podemos utilizar la última versión de PyOCD.
+
+## Configuración adicional
+
+### Acceso al puerto serial
+
+En Linux, para poder leer y escribir en el puerto serial sin ser _root_, agregar el usuario al grupo `dialout`:
+```
+$ sudo usermod -a -G dialout usuario
+```
 
 ## Prueba
 
