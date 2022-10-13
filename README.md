@@ -14,5 +14,5 @@ Este repositorio contiene guías, tutoriales y otra documentación de la cátedr
 - [mbed LPC1768 blink](https://github.com/if025-pm-unpsjb/mbed2-lpc1768-base-makefile)
 - [mbed LPC1768 blink (assembler)](https://github.com/if025-pm-unpsjb/mbed-blinky-asm-makefile)
 - [FRDM-K64F blink](https://github.com/if025-pm-unpsjb/mbed2-frdm-k64f-base-makefile)
-- [EDU-CIAA-NXP blink](https://github.com/if025-pm-unpsjb/ciaa-example-makefile)
+- [EDU-CIAA-NXP blink](https://github.com/if025-pm-unpsjb/edu-ciaa-nxp-base-makefile)
 - [LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
