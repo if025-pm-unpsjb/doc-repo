@@ -7,6 +7,8 @@ Tabla de Contenidos:
 - [Instalación](#instalacion-del-software-necesario)
 - [Configuración](#configurar-eclipse)
 - [Plugins adicionales](#plugins-adicionales)
+- [QEMU](#qemu)
+- [pyOCD](#pyocd)
 - [Proyecto de prueba](#proyecto-de-prueba)
 
 ---
@@ -129,6 +131,6 @@ Para estas placas podemos utilizar la última versión de PyOCD.
 
 ## Prueba
 
-Para probar que todo funcione correctamente, clonar o descargar en un subdirectorio de `src` el siguiente proyecto y seguir las instrucciones:
+Para probar que todo funcione correctamente, clonar o descargar en un subdirectorio de `src` el siguiente proyecto y seguir las instrucciones del README:
 
 - [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
