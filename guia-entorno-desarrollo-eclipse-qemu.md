@@ -82,7 +82,20 @@ Para otras distribuciones, seguir las indicaciones en la [página de instalació
 
 Para trabajar con las placas mbed LPC1768, utilizaremos la versión 0.10 de PyOCD, ya que las versiones posteriores tiene problemas para conectarse con estas placas de desarrollo. Esta versión de PyOCD requiere el uso de Python 2, versión 2.7.9 o posterior. Como además depende de la librería IntervalTree, versión 2.1.0, se utilizará un entorno virtual, para no introducir problemas en la instalación del sistema.
 
-Primero, desde una línea de comandos, instalar `virtualenv`:
+En primer lugar, verificar si esta instalado Python 2. En caso de no ser así, utilizar el administrador de paquetes de la distribución. Por ejemplo, para Ubuntu:
+```
+$ sudo apt install python2
+```
+A continuación, instalar `pip`:
+```
+$ python2 -m ensurepip --upgrade
+```
+O bien:
+```
+$ wget https://bootstrap.pypa.io/get-pip.py 
+$ python2 get-pip.py
+```
+Una vez que se tiene Python2 instalado, desde una línea de comandos, instalar `virtualenv`:
 ```
 $ python2 -m pip install --upgrade virtualenv
 ```
