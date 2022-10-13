@@ -76,24 +76,19 @@ Para otras distribuciones, seguir las indicaciones en la [página de instalació
 
 ## pyOCD
 
-[PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb. Puede se utilizada como reemplazo de OpenOCD.
+[PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb.
 
 ### mbed LPC1768
 
-Para trabajar con las placas mbed LPC1768, utilizaremos la versión 0.10 de PyOCD, ya que con las posteriores se han encontrado problemas para trabajar con estas placas mbed. Como PyOCD requiere la librería IntervalTree versión 2.10 vamos a crear un entorno virtual de Python, para no introducir problemas en la instalación del sistema.
+Para trabajar con las placas mbed LPC1768, utilizaremos la versión 0.10 de PyOCD, ya que las versiones posteriores tiene problemas para conectarse con estas placas de desarrollo. Esta versión de PyOCD requiere el uso de Python 2, versión 2.7.9 o posterior. Como además depende de la librería IntervalTree, versión 2.1.0, se utilizará un entorno virtual, para no introducir problemas en la instalación del sistema.
 
-Verificar la versión de Python que tenemos instalada. Si es una versión posterior a la 3.8, debemos instalar dicha versión. En Ubuntu se puede realizar de la siguiente manera:
+Primero, desde una línea de comandos, instalar `virtualenv`:
 ```
-$ sudo apt install software-properties-common
-$ sudo add-apt-repository ppa:deadsnakes/ppa
-$ sudo apt update
-$ sudo apt install python3.8
-$ sudo apt install python3.8-venv
+$ python2 -m pip install --upgrade virtualenv
 ```
-
-Primero, vamos a crear un entorno desde donde ejecutaremos PyOCD:
+Luego, vamos a crear un entorno desde donde ejecutaremos PyOCD:
 ```
-$ python3.8 -m venv pyocd-0.10
+$ python2 -m virtualenv pyocd-0.10
 ```
 A continuación, activamos el entorno. En Linux, ejecutar el siguiente comando:
 ```
@@ -105,15 +100,19 @@ $ pyocd-0.10/Scripts/activate
 ```
 Luego, la línea de comandos debe cambiar, indicando que estan ejecutando en el nuevo ambiente virtual. Para instalar pyOCD y la librería, ejecutar desde la linea de comandos:
 ```
-(pyocd-0.10) $ pip install -U intervaltree==2.1.0 pyocd==0.10
+(pyocd-python) $ pip install -U intervaltree==2.1.0 pyocd==0.10
 ```
 Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecutar el siguiente comando desde una linea de comandos, para obtener la versión instalada:
 ```
-(pyocd-0.10)$ pyocd-gdbserver --version
+(pyocd-python)$ pyocd-gdbserver --version
 0.10.0
 $
 ```
 En caso de que existan problemas para reconocer la placa mbed LPC1768 en Linux, seguir los pasos indicados [aquí](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev.
+
+### FRDM-K64F y otras placas mbed
+
+Para estas placas podemos utilizar la última versión de PyOCD.
 
 ## Prueba
 
