@@ -141,6 +141,8 @@ $ sudo usermod -a -G dialout usuario
 
 ## Prueba
 
-Para probar que todo funcione correctamente, clonar o descargar en un subdirectorio de `src` el siguiente proyecto y seguir las instrucciones del README:
+Para probar que todo funcione correctamente, clonar o descargar en un subdirectorio de `src` alguno de los siguientes proyecto y seguir las instrucciones del README:
 
-- [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
+- Para la placa LPC1768: [mbed2 base](https://github.com/if025-pm-unpsjb/mbed2-base-makefile)
+ 
+- Con QEMU: [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
