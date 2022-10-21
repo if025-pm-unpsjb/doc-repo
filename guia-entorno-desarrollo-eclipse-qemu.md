@@ -58,7 +58,7 @@ Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el dire
 
 ### FreeRTOS Task Aware Debugger
 
-Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo el estado de las tareas, memoria utilizada, etc. Para instalarlo, seguir las instrucciones en esta [guía](eclipse-freertos-tad.md). 
+Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo el estado de las tareas, memoria utilizada, etc. Para instalarlo, seguir las instrucciones en esta [guía](eclipse-freertos-tad.md). Si se tiene la versión 2020-06 de EclipseCDT, descargar el archivo [com.nxp.freertos.gdb.tad_1.0.2.201704260904.jar](resources/com.nxp.freertos.gdb.tad_1.0.2.201704260904.jar) y copiarlo dentro de la carpeta `plugins` de Eclipse.
 
 ### Percepio Tracealyzer para FreeRTOS
 
