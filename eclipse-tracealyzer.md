@@ -10,7 +10,7 @@ En Linux debe ser posible ejecutar el programa utilizando [Wine](https://www.win
 
 A continuación se presentan las instrucciones para instalar y configurar un plugin para Eclipse que facilita la captura de una traza de ejecución y su visualización con Tracealyzer.
 
-Copiar los archivos `com.percepio.tracealyzer.core_1.0.6.v20180223734.jar` y `com.percepio.tracealyzer.ui_1.0.6.v20180223734.jar` en el directorio `eclipse/plugins`. Reiniciar Eclipse. Debería aparecer un nuevo menú **[Percepio]**.
+Copiar los archivos [`com.percepio.tracealyzer.core_1.0.6.v20180223734.jar`](resources/com.percepio.tracealyzer.core_1.0.6.v20180223734.jar) y [`com.percepio.tracealyzer.ui_1.0.6.v20180223734.jar`](resources/com.percepio.tracealyzer.ui_1.0.6.v20180223734.jar) en el directorio `eclipse/plugins`. Reiniciar Eclipse. Debería aparecer un nuevo menú **[Percepio]**.
 
 ### Configuración del Plugin
 Hacer clic en el menú **[Percepio > Preferences]**. En la nueva ventana, configurar las siguientes opciones de la siguientes manera:
