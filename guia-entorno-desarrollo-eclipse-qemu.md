@@ -7,7 +7,6 @@ Tabla de Contenidos:
 - [Instalación](#instalacion-del-software-necesario)
 - [Configuración](#configurar-eclipse)
 - [Plugins adicionales](#plugins-adicionales)
-- [QEMU](#qemu)
 - [pyOCD](#pyocd)
 - [Configuración adicional](#configuracion-adicional)
 - [Proyecto de prueba](#proyecto-de-prueba)
@@ -19,9 +18,11 @@ Tabla de Contenidos:
 Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
 
 - Crear un directorio `setr` (por ejemplo `C:\setr` en Windows o `~/setr` en Linux) donde se van a alojar los programas y paquetes necesarios.
-- **Embedded Toolchain**: descargar el archivo `.zip` correspondiente a la plataforma que utilice (`linux-x64` o `win32-x64`) desde este [enlace](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.3.1-1.1) y descomprir en `setr/arm-none-eabi-gcc`.
+- **Embedded Toolchain**: descargar la versión más reciente correspondiente a la plataforma que utilice (`linux-x64` o `win32-x64`) desde este [enlace](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases) y descomprir en `setr/arm-none-eabi-gcc`.
 - **Windows Build Tools**: este paquete solo es requerido para Windows. Descargar el archivo zip correspondiente a la versión de Windows que utilice (32 o 64 bits) desde este [enlace](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.3.0-1) y descomprimir en `setr/windows-build-tools`.
 - **Eclipse Embedded CDT**: descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-embedded-cc-developers) y descomprimir el archivo en `setr\eclipse`.
+- *QEMU*: descargar la versión más reciente desde [este enlace](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases) o desde [este](https://qemu.weilnetz.de/w64/) si se utiliza Windows, y descomprimir en el directorio `setr\qemu`.
+- *OpenOCD*: descargar la versión 0.11.0-4 desde [este enlace](https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-4) y descomprimir en el directorio `setr\openocd`.
 - **Java**: es requerido para ejecutar Eclipse. Si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
 - Crear los directorios `workspace` y `src` dentro de `setr`.
 
@@ -31,6 +32,8 @@ setr\
 ├── eclipse\                # Eclipse 
 ├── arm-none-eabi-gcc\      # Toolchain (compilador, linker, librerias, etc.)
 ├── windows-build-tools\    # Make y otras aplicaciones (solo necesario en Windows)
+├── qemu\                   # QEMU
+├── openocd\                # OpenOCD
 ├── workspace\              # Workspace para Eclipse
 └── src\                    # Aquí descargaremos los proyectos
 ```
@@ -40,9 +43,15 @@ setr\
 Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el directorio `workspace` anteriormente creado. Luego, abrir las preferencias de Eclipse (**[Window > Preferences]**) y:
 
 - Ir a **[MCU]**:
-  - En **[Global Arm Toolchain path]**:
+  - En **[Global Arm Toolchains Paths]**:
     - En **Default Toolchain** seleccionar _xPack GNU Arm Embedded GCC_.
     - En **Toolchain folder** indicar el _path_ completo al directorio `setr/arm-none-eabi-gcc/bin`.
+  - En **[Global OpenOCD Path]**:
+    - En **Executable** debe decir `openocd`
+    - En **Folder** indicar el _path_ completo al directorio `setr/openocd/bin`.
+  - En **[Global QEMU Paths]**:
+    - En **arm executable** debe decir `qemu-system-arm`
+    - En **arm folder** indicar el _path_ completo al directorio `setr/qemu/bin`.
   - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `setr/windows-build-tools/bin` (sólo necesario en Windows).
   - Hacer clic en **[Apply and Close]**.
 
@@ -63,19 +72,6 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 ### Percepio Tracealyzer para FreeRTOS
 
 [Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente. Para instalarlo y configurarlo, seguir la [siguiente guía](eclipse-tracealyzer.md).
-
-## QEMU
-
-Instalar QEMU (un emulador y virtualizador de distintas plataformas):
-
-- **Windows**: descargar e instalar la última versión desde [este enlace](https://qemu.weilnetz.de/w64/) (versión de 64 bits).
-- **Linux**: se puede instalar mediante el administrador de paquetes de la distribución. Por ejemplo, en Ubuntu:
-
-```
-$ sudo apt install qemu-system-arm 
-```
-
-Para otras distribuciones, seguir las indicaciones en la [página de instalación](https://www.qemu.org/download/#linux). 
 
 ## pyOCD
 
