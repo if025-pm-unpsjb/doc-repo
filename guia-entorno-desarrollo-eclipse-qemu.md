@@ -73,32 +73,32 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 
 [Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente. Para instalarlo y configurarlo, seguir la [siguiente guía](eclipse-tracealyzer.md).
 
+## Reglas UDEV
+
+En caso de que existan problemas para reconocer la placa mbed LPC1768 en Linux, seguir los pasos indicados [aquí](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev.
+
 ## pyOCD
 
 [PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb.
 
 ### mbed LPC1768
 
-Para trabajar con las placas mbed LPC1768, utilizaremos la versión 0.10 de PyOCD, ya que las versiones posteriores tiene problemas para conectarse con estas placas de desarrollo. Esta versión de PyOCD requiere el uso de Python 2, versión 2.7.9 o posterior. Como además depende de la librería IntervalTree, versión 2.1.0, se utilizará un entorno virtual, para no introducir problemas en la instalación del sistema.
+Para trabajar con las placas mbed LPC1768, utilizaremos la versión 0.10 de PyOCD, ya que las versiones posteriores tiene problemas para conectarse con estas placas de desarrollo. Esta versión de PyOCD requiere el uso de Python 2.7.
 
-En primer lugar, verificar si esta instalado Python 2. En caso de no ser así, utilizar el administrador de paquetes de la distribución. Por ejemplo, para Ubuntu:
+En primer lugar verificar si esta instalado Python 2.7. En caso de no ser así, utilizar el administrador de paquetes de la distribución. Por ejemplo, para Ubuntu:
 ```
-$ sudo apt install python2
+$ sudo apt install python2.7
 ```
 A continuación, instalar `pip`:
 ```
-$ python2 -m ensurepip --upgrade
-```
-O bien:
-```
 $ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
-$ python2 get-pip.py
+$ python2.7 get-pip.py
 ```
-Una vez que se tiene Python2 instalado, desde una línea de comandos, instalar `virtualenv`:
+Una vez que se tiene Python2.7 instalado, desde una línea de comandos, instalar `virtualenv`:
 ```
 $ python2 -m pip install --upgrade virtualenv
 ```
-Luego, vamos a crear un entorno desde donde ejecutaremos PyOCD:
+Luego, vamos a crear un entorno desde donde ejecutaremos PyOCD. Ejecutar este comando en el directorio `setr`:
 ```
 $ python2 -m virtualenv pyocd-0.10
 ```
@@ -120,8 +120,6 @@ Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecuta
 0.10.0
 $
 ```
-En caso de que existan problemas para reconocer la placa mbed LPC1768 en Linux, seguir los pasos indicados [aquí](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev.
-
 ### FRDM-K64F y otras placas mbed
 
 Para estas placas podemos utilizar la última versión de PyOCD.
@@ -132,7 +130,7 @@ Para estas placas podemos utilizar la última versión de PyOCD.
 
 En Linux, para poder leer y escribir en el puerto serial sin ser _root_, agregar el usuario al grupo `dialout`:
 ```
-$ sudo usermod -a -G dialout usuario
+$ sudo adduser user dialout
 ```
 
 ## Prueba
