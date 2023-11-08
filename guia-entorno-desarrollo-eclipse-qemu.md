@@ -75,7 +75,7 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 
 ## Reglas UDEV
 
-En caso de que existan problemas para reconocer la placa mbed LPC1768 en Linux, seguir los pasos indicados [aquí](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev.
+Seguir los pasos indicados [aquí](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev, copiando el archivo `50-cmsis-dap.rules` en `/etc/udev/rules.d`.
 
 ## pyOCD
 
@@ -120,6 +120,7 @@ Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecuta
 0.10.0
 $
 ```
+
 ### FRDM-K64F y otras placas mbed
 
 Para estas placas podemos utilizar la última versión de PyOCD.
