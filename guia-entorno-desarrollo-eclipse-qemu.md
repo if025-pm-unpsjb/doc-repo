@@ -138,6 +138,7 @@ $ sudo adduser user dialout
 
 Para probar que todo funcione correctamente, clonar o descargar en un subdirectorio de `src` alguno de los siguientes proyecto y seguir las instrucciones del README:
 
-- Para la placa LPC1768: [mbed2 base](https://github.com/if025-pm-unpsjb/mbed2-base-makefile)
+- [Proyecto de prueba para la placa mbed LPC1768](https://github.com/if025-pm-unpsjb/mbed2-base-makefile)
  
-- Con QEMU: [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
+- [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
+
