@@ -67,15 +67,15 @@ Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el dire
 
 ### FreeRTOS Task Aware Debugger
 
-Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo el estado de las tareas, memoria utilizada, etc. Para instalarlo, seguir las instrucciones en esta [guía](eclipse-freertos-tad.md). Si se tiene la versión 2020-06 de EclipseCDT, descargar el archivo [com.nxp.freertos.gdb.tad_1.0.2.201704260904.jar](resources/com.nxp.freertos.gdb.tad_1.0.2.201704260904.jar) y copiarlo dentro de la carpeta `plugins` de Eclipse.
+Plugin para Eclipse que permite obtener información acerca del estado de FreeRTOS en tiempo de ejecución, como por ejemplo el estado de las tareas, memoria utilizada, etc. Para instalarlo, seguir las instrucciones en esta [guía](eclipse-freertos-tad.md). Si se tiene la versión 2020-06 de EclipseCDT, descargar el archivo [com.nxp.freertos.gdb.tad_1.0.2.201704260904.jar](https://github.com/if025-pm-unpsjb/doc-repo/raw/master/resources/com.nxp.freertos.gdb.tad_1.0.2.201704260904.jar) y copiarlo dentro de la carpeta `plugins` de Eclipse. Reiniciar Eclipse desde `[File > Restart]`.
 
 ### Percepio Tracealyzer para FreeRTOS
 
 [Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente. Para instalarlo y configurarlo, seguir la [siguiente guía](eclipse-tracealyzer.md).
 
-## Reglas UDEV
+## Reglas UDEV 
 
-Seguir los pasos indicados [aquí](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev, copiando el archivo `50-cmsis-dap.rules` en `/etc/udev/rules.d`.
+Este paso sólo es requerido en Linux. Seguir [estas instrucciones](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev, copiando el archivo `50-cmsis-dap.rules` en `/etc/udev/rules.d`.
 
 ## pyOCD
 
