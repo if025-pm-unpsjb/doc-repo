@@ -26,7 +26,7 @@ Para evitar inconvenientes, realizar la instalación siguiendo las siguientes gu
 - **Java**: es requerido para ejecutar Eclipse. Si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
 - Crear los directorios `workspace` y `src` dentro de `setr`.
 
-Una vez descargado los programas, debería quedar una estructura de directorios como la siguiente:
+Una vez descargado los programas, debería quedar una estructura de directorios similar a la siguiente:
 ```
 setr\
 ├── eclipse\                # Eclipse 
