@@ -123,7 +123,12 @@ $
 
 ### FRDM-K64F y otras placas mbed
 
-Para estas placas podemos utilizar la última versión de PyOCD.
+Para estas placas podemos utilizar la última versión de PyOCD. Recomendamos usar [`pipx`](https://pipx.pypa.io/stable/):
+```
+$ sudo apt install pipx
+$ pipx ensurepath
+$ pipx install pyocd
+```
 
 ## Configuración adicional
 
