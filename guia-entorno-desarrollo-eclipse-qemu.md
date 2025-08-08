@@ -4,6 +4,8 @@ Este documento es una guía de instalación y configuración de un entorno de de
 
 Tabla de Contenidos:
 
+- [Carpeta de la cursada](#carpeta-de-la-cursada)
+- [Eclipse](#descargar-eclipse)
 - [Instalación](#instalacion-del-software-necesario)
 - [Configuración](#configurar-eclipse)
 - [Plugins adicionales](#plugins-adicionales)
@@ -13,29 +15,51 @@ Tabla de Contenidos:
 
 ---
 
+## Carpeta de la cursada
+
+Crear una carpeta donde se descarga todo el software y material necesario para la cursada. En esta guía se asume que este directorio es `~/setr`.
+
+Una vez creada la carpeta, crear dentro los directorios `~setr/workspace` y `~/setr/src`.
+
+## Descargar Eclipse
+
+Descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-embedded-cc-developers) y descomprimir el archivo en `~/setr/eclipse`.
+
 ## Instalación del software necesario
 
-Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
+Para esto hay dos opciones: generar una imagen docker con todo el software necesario o descargarlo manualmente.
 
-- Crear un directorio `setr` (por ejemplo `C:\setr` en Windows o `~/setr` en Linux) donde se van a alojar los programas y paquetes necesarios.
+### Docker
+
+Seguir estos pasos para crear una imagen Docker que contiene todo el software necesario:
+
+- Dentro de la carpeta `~/src`, clonar el repositorio [devenv](https://github.com/if025-pm-unpsjb/devenv).
+- Luego, ejecutar el script `~/setr/src/devenv/mkenv.sh`.
+- Verificar que se creo una imagen Docker con nombre `setr` ejecutando `docker images | grep setr`.
+
+### Descarga manual
+
+Si se desea no utilzar Docker, se puede descargar el software necesario paso a paso. Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
+
+Crear la carpeta `~/setr/tools`. Luego descargar y descomprimir en este directorio los siguientes programas:
+
 - **Embedded Toolchain**: descargar la versión más reciente correspondiente a la plataforma que utilice (`linux-x64` o `win32-x64`) desde este [enlace](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases) y descomprir en `setr/arm-none-eabi-gcc`.
 - **Windows Build Tools**: este paquete solo es requerido para Windows. Descargar el archivo zip correspondiente a la versión de Windows que utilice (32 o 64 bits) desde este [enlace](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.3.0-1) y descomprimir en `setr/windows-build-tools`.
-- **Eclipse Embedded CDT**: descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-embedded-cc-developers) y descomprimir el archivo en `setr\eclipse`.
 - **QEMU**: descargar la versión más reciente desde [este enlace](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases) o desde [este](https://qemu.weilnetz.de/w64/) si se utiliza Windows, y descomprimir en el directorio `setr\qemu`.
 - **OpenOCD**: descargar la versión 0.11.0-4 desde [este enlace](https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-4) y descomprimir en el directorio `setr\openocd`.
 - **Java**: es requerido para ejecutar Eclipse. Si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
-- Crear los directorios `workspace` y `src` dentro de `setr`.
 
-Una vez descargado los programas, debería quedar una estructura de directorios como la siguiente:
+Debería quedar una estructura de directorios como la siguiente:
 ```
-setr\
-├── eclipse\                # Eclipse 
-├── arm-none-eabi-gcc\      # Toolchain (compilador, linker, librerias, etc.)
-├── windows-build-tools\    # Make y otras aplicaciones (solo necesario en Windows)
-├── qemu\                   # QEMU
-├── openocd\                # OpenOCD
-├── workspace\              # Workspace para Eclipse
-└── src\                    # Aquí descargaremos los proyectos
+~/setr
+├── eclipse                # Eclipse 
+├── workspace              # Workspace para Eclipse
+├── src                    # Aquí descargaremos los proyectos
+└── tools                  # Aquí descargaremos los programas si seguimos la instalación manual
+    ├── arm-none-eabi-gcc      # Toolchain (compilador, linker, librerias, etc.)
+    ├── windows-build-tools    # Make y otras aplicaciones (solo necesario en Windows)
+    ├── qemu                   # QEMU
+    └── openocd                # OpenOCD
 ```
 
 ## Configurar Eclipse
@@ -138,7 +162,8 @@ $ sudo adduser user dialout
 
 Para probar que todo funcione correctamente, clonar o descargar en un subdirectorio de `src` alguno de los siguientes proyecto y seguir las instrucciones del README:
 
+- [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
+
 - [Proyecto de prueba para la placa mbed LPC1768](https://github.com/if025-pm-unpsjb/mbed2-base-makefile)
  
-- [Proyecto de prueba para la placa LM3S6965](https://github.com/if025-pm-unpsjb/lm3s6965evb-helloworld-makefile)
 
