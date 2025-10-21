@@ -47,10 +47,16 @@ Para evitar inconvenientes, realizar la instalación siguiendo las siguientes gu
 
 Descargar y descomprimir en el directorio `~/setr/tools` los siguientes programas:
 
-- **Embedded Toolchain**: descargar la versión más reciente correspondiente a la plataforma que utilice (`linux-x64` o `win32-x64`) desde este [enlace](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases) y descomprir en `~/setr/tools/arm-none-eabi-gcc`.
-- **Windows Build Tools**: este paquete solo es requerido para Windows. Descargar el archivo zip correspondiente a la versión de Windows que utilice (32 o 64 bits) desde este [enlace](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.3.0-1) y descomprimir en `~/setr/tools/windows-build-tools`.
-- **QEMU**: descargar la versión más reciente desde [este enlace](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases) o desde [este](https://qemu.weilnetz.de/w64/) si se utiliza Windows, y descomprimir en el directorio `~/setr/tools/qemu`.
-- **OpenOCD**: descargar la versión 0.11.0-4 desde [este enlace](https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-4) y descomprimir en el directorio `~/setr/tools/openocd`.
+- **Embedded Toolchain**: descargar la versión correspondiente a la plataforma que utilice y descomprir en `~/setr/tools/arm-none-eabi-gcc`:
+    - [Linux](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v14.2.1-1.1/xpack-arm-none-eabi-gcc-14.2.1-1.1-linux-x64.tar.gz)
+    - [Windows](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v14.2.1-1.1/xpack-arm-none-eabi-gcc-14.2.1-1.1-win32-x64.zip)
+- **Windows Build Tools**: solo requerido para Windows. Descargar desde este [enlace](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/download/v4.4.1-3/xpack-windows-build-tools-4.4.1-3-win32-x64.zip) y descomprimir en `~/setr/tools/windows-build-tools`.
+- **QEMU**: descargar la versión correspondiente a su sistema operativo y descomprimir en el directorio `~/setr/tools/qemu`:
+    - [Linux](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/download/v9.2.4-1/xpack-qemu-arm-9.2.4-1-linux-x64.tar.gz)
+    - [Windows](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/download/v9.2.4-1/xpack-qemu-arm-9.2.4-1-win32-x64.zip)
+- **OpenOCD**: descargar la versión correspondiente a su sistema operativo y descomprimir en el directorio `~/setr/tools/openocd`.
+    - [Linux](https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-7/xpack-openocd-0.12.0-7-linux-x64.tar.gz)
+    - [Windows](https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-7/xpack-openocd-0.12.0-7-win32-x64.zip)
 
 Debería quedar una estructura de directorios como la siguiente:
 ```
