@@ -102,7 +102,7 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 
 ## Reglas UDEV 
 
-Este paso sólo es requerido en Linux. Seguir [estas instrucciones](https://github.com/mbedmicro/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev, copiando el archivo `50-cmsis-dap.rules` en `/etc/udev/rules.d`.
+Este paso sólo es requerido en Linux. Seguir [estas instrucciones](https://github.com/pyocd/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev, copiando el archivo `50-cmsis-dap.rules` en `/etc/udev/rules.d`.
 
 ## pyOCD
 
