@@ -67,19 +67,19 @@ Debería quedar una estructura de directorios como la siguiente:
 
 ## Configurar Eclipse
 
-Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el directorio `workspace` anteriormente creado. Luego, abrir las preferencias de Eclipse (**[Window > Preferences]**) y:
+Ejecutar Eclipse y cuando solicite la ubicación del _workspace_ indicar el directorio `~/setr/workspace`. Luego, abrir las preferencias de Eclipse (**[Window > Preferences]**) y:
 
 - Ir a **[MCU]**:
   - En **[Global Arm Toolchains Paths]**:
     - En **Default Toolchain** seleccionar _xPack GNU Arm Embedded GCC_.
-    - En **Toolchain folder** indicar el _path_ completo al directorio `setr/arm-none-eabi-gcc/bin`.
+    - En **Toolchain folder** indicar el _path_ completo al directorio `~/setr/tools/arm-none-eabi-gcc/bin`.
   - En **[Global OpenOCD Path]**:
     - En **Executable** debe decir `openocd`
-    - En **Folder** indicar el _path_ completo al directorio `setr/openocd/bin`.
+    - En **Folder** indicar el _path_ completo al directorio `~/setr/tools/openocd/bin`.
   - En **[Global QEMU Paths]**:
     - En **arm executable** debe decir `qemu-system-arm`
-    - En **arm folder** indicar el _path_ completo al directorio `setr/qemu/bin`.
-  - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `setr/windows-build-tools/bin` (sólo necesario en Windows).
+    - En **arm folder** indicar el _path_ completo al directorio `~setr/tools/qemu/bin`.
+  - En **[Global Build Tool Path]** indicar el _path_ completo al directorio `~/setr/tools/windows-build-tools/bin` (sólo necesario en Windows).
   - Hacer clic en **[Apply and Close]**.
 
 - Aplicar también los siguientes cambios a la configuración:
@@ -106,51 +106,7 @@ Este paso sólo es requerido en Linux. Seguir [estas instrucciones](https://gith
 
 ## pyOCD
 
-[PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb.
-
-### mbed LPC1768
-
-Para trabajar con las placas mbed LPC1768, utilizaremos la versión 0.10 de PyOCD, ya que las versiones posteriores tiene problemas para conectarse con estas placas de desarrollo. Esta versión de PyOCD requiere el uso de Python 2.7.
-
-En primer lugar verificar si esta instalado Python 2.7. En caso de no ser así, utilizar el administrador de paquetes de la distribución. Por ejemplo, para Ubuntu:
-```
-$ sudo apt install python2.7
-```
-A continuación, instalar `pip`:
-```
-$ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
-$ python2.7 get-pip.py
-```
-Una vez que se tiene Python2.7 instalado, desde una línea de comandos, instalar `virtualenv`:
-```
-$ python2 -m pip install --upgrade virtualenv
-```
-Luego, vamos a crear un entorno desde donde ejecutaremos PyOCD. Ejecutar este comando en el directorio `setr`:
-```
-$ python2 -m virtualenv pyocd-0.10
-```
-A continuación, activamos el entorno. En Linux, ejecutar el siguiente comando:
-```
-$ source pyocd-0.10/bin/activate
-```
-En Windows, ejecutar este comando:
-```
-$ pyocd-0.10/Scripts/activate
-```
-Luego, la línea de comandos debe cambiar, indicando que estan ejecutando en el nuevo ambiente virtual. Para instalar pyOCD y la librería, ejecutar desde la linea de comandos:
-```
-(pyocd-0.10) $ pip install -U intervaltree==2.1.0 pyocd==0.10
-```
-Para verificar que se haya instalado correctamente el `pyocd-gdbserver`, ejecutar el siguiente comando desde una linea de comandos, para obtener la versión instalada:
-```
-(pyocd-0.10)$ pyocd-gdbserver --version
-0.10.0
-$
-```
-
-### FRDM-K64F y otras placas mbed
-
-Para estas placas podemos utilizar la última versión de PyOCD. Recomendamos usar [`pipx`](https://pipx.pypa.io/stable/):
+[PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb. Recomendamos usar [`pipx`](https://pipx.pypa.io/stable/) para instalarlo:
 ```
 $ sudo apt install pipx
 $ pipx ensurepath
