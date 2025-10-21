@@ -4,8 +4,7 @@ Este repositorio contiene guías, tutoriales y otra documentación de la cátedr
 
 ## Guías
 
-- [Instalación y configuración de Eclipse con QEMU](guia-entorno-desarrollo-eclipse-qemu.md).
-- [Instalación de entorno de desarrollo basado en Eclipse](guia-entorno-desarrollo-eclipse.md).
+- [Instalación y configuración de entorno de desarrollo basado en Eclipse](guia-entorno-desarrollo-eclipse-qemu.md).
 - [Instalación y configuración de Perceptio Tracealyzer](eclipse-tracealyzer.md)
 - [Instalación y configuración de FreeRTOS Task Aware Debugger](eclipse-freertos-tad.md)
 
