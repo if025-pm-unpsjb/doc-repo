@@ -27,6 +27,8 @@ $ mkdir -p ~/setr ~/setr/workspace ~/setr/src ~/setr/tools
 
 Descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-embedded-cc-developers) y descomprimir el archivo en `~/setr/eclipse`.
 
+Java es necesario para ejecutar Eclipse. Si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
+
 ## Instalación del software necesario
 
 Para esto hay dos opciones: generar una imagen docker con todo el software necesario o descargarlo manualmente.
@@ -43,13 +45,12 @@ Seguir estos pasos para crear una imagen Docker que contiene todo el software ne
 
 Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
 
-Crear la carpeta `~/setr/tools`. Luego descargar y descomprimir en este directorio los siguientes programas:
+Descargar y descomprimir en el directorio `~/setr/tools` los siguientes programas:
 
-- **Embedded Toolchain**: descargar la versión más reciente correspondiente a la plataforma que utilice (`linux-x64` o `win32-x64`) desde este [enlace](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases) y descomprir en `setr/arm-none-eabi-gcc`.
-- **Windows Build Tools**: este paquete solo es requerido para Windows. Descargar el archivo zip correspondiente a la versión de Windows que utilice (32 o 64 bits) desde este [enlace](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.3.0-1) y descomprimir en `setr/windows-build-tools`.
-- **QEMU**: descargar la versión más reciente desde [este enlace](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases) o desde [este](https://qemu.weilnetz.de/w64/) si se utiliza Windows, y descomprimir en el directorio `setr\qemu`.
-- **OpenOCD**: descargar la versión 0.11.0-4 desde [este enlace](https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-4) y descomprimir en el directorio `setr\openocd`.
-- **Java**: es requerido para ejecutar Eclipse. Si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
+- **Embedded Toolchain**: descargar la versión más reciente correspondiente a la plataforma que utilice (`linux-x64` o `win32-x64`) desde este [enlace](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases) y descomprir en `~/setr/tools/arm-none-eabi-gcc`.
+- **Windows Build Tools**: este paquete solo es requerido para Windows. Descargar el archivo zip correspondiente a la versión de Windows que utilice (32 o 64 bits) desde este [enlace](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.3.0-1) y descomprimir en `~/setr/tools/windows-build-tools`.
+- **QEMU**: descargar la versión más reciente desde [este enlace](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases) o desde [este](https://qemu.weilnetz.de/w64/) si se utiliza Windows, y descomprimir en el directorio `~/setr/tools/qemu`.
+- **OpenOCD**: descargar la versión 0.11.0-4 desde [este enlace](https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-4) y descomprimir en el directorio `~/setr/tools/openocd`.
 
 Debería quedar una estructura de directorios como la siguiente:
 ```
