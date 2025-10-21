@@ -25,7 +25,7 @@ $ mkdir -p ~/setr ~/setr/workspace ~/setr/src ~/setr/tools
 
 ## Descargar Eclipse
 
-Descargar la versión más reciente de [_GNU Eclipse IDE for Embedded C/C++_](https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-ide-embedded-cc-developers) y descomprimir el archivo en `~/setr/eclipse`.
+Descargar _Eclipse IDE for Embedded C/C++ Developers_ desde este [enlace](https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2025-09/R/eclipse-embedcpp-2025-09-R-linux-gtk-x86_64.tar.gz) y descomprimir en `~/setr/eclipse`.
 
 Java es necesario para ejecutar Eclipse. Si no esta instalado, seguir la [guía de instalación de Java](https://eclipse-embed-cdt.github.io/plugins/prerequisites/) para su sistema operativo.
 
