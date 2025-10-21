@@ -17,9 +17,11 @@ Tabla de Contenidos:
 
 ## Carpeta de la cursada
 
-Crear una carpeta donde se descarga todo el software y material necesario para la cursada. En esta guía se asume que este directorio es `~/setr`.
+Crear una carpeta donde se descarga todo el software y material necesario para la cursada. En esta guía se asume que este directorio es `~/setr`. Dentro de esta carpeta, se espera tener los directorios `~setr/workspace`, `~/setr/src` y `~/setr/tools`:
 
-Una vez creada la carpeta, crear dentro los directorios `~setr/workspace` y `~/setr/src`.
+```sh
+$ mkdir -p ~/setr ~/setr/workspace ~/setr/src ~/setr/tools
+```
 
 ## Descargar Eclipse
 
@@ -39,7 +41,7 @@ Seguir estos pasos para crear una imagen Docker que contiene todo el software ne
 
 ### Descarga manual
 
-Si se desea no utilzar Docker, se puede descargar el software necesario paso a paso. Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
+Para evitar inconvenientes, realizar la instalación siguiendo las siguientes guías en el orden presentado y atendiendo a las aclaraciones indicadas. Se utilizaran en lo posible paquetes _stand-alone_ que no requieren instaladores. De esta manera, se evitan posibles conflictos con instalaciones previas y la actualización o eliminación del entorno es más sencilla.
 
 Crear la carpeta `~/setr/tools`. Luego descargar y descomprimir en este directorio los siguientes programas:
 
