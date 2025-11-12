@@ -9,8 +9,8 @@ Tabla de Contenidos:
 - [Instalación](#instalacion-del-software-necesario)
 - [Configuración](#configurar-eclipse)
 - [Plugins adicionales](#plugins-adicionales)
-- [pyOCD](#pyocd)
-- [Configuración adicional](#configuracion-adicional)
+- [Reglas udev](#reglas-udev)
+- [Puerto Serial](#acceso-al-puerto-serial)
 - [Proyecto de prueba](#proyecto-de-prueba)
 
 ---
@@ -71,7 +71,8 @@ Debería quedar una estructura de directorios como la siguiente:
     ├── arm-none-eabi-gcc      # Toolchain (compilador, linker, librerias, etc.)
     ├── windows-build-tools    # Make y otras aplicaciones (solo necesario en Windows)
     ├── qemu                   # QEMU
-    └── openocd                # OpenOCD
+    ├── openocd                # OpenOCD
+    └── pyocd                  # pyOCD
 ```
 
 ## Configurar Eclipse
@@ -109,7 +110,7 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 
 [Tracealyzer para FreeRTOS](https://percepio.com/docs/FreeRTOS/manual/index.html#Tracealyzer_for_FreeRTOS) es una aplicación para realizar un seguimiento de la ejecución de sistemas basados en FreeRTOS, generando una traza que puede ser visualizada en línea o posteriormente. Para instalarlo y configurarlo, seguir la [siguiente guía](eclipse-tracealyzer.md).
 
-## Reglas UDEV 
+## Reglas udev 
 
 Este paso sólo es requerido en Linux. Seguir [estas instrucciones](https://github.com/pyocd/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev, copiando el archivo `50-cmsis-dap.rules` en `/etc/udev/rules.d`.
 
