@@ -57,6 +57,9 @@ Descargar y descomprimir en el directorio `~/setr/tools` los siguientes programa
 - **OpenOCD**: descargar la versión correspondiente a su sistema operativo y descomprimir en el directorio `~/setr/tools/openocd`.
     - [Linux](https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-7/xpack-openocd-0.12.0-7-linux-x64.tar.gz)
     - [Windows](https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-7/xpack-openocd-0.12.0-7-win32-x64.zip)
+- **pyOCD**: descargar la versión correspondiente a su sistema operativo y descomprimir en el directorio `~/setr/tools/pyocd`.
+    - [Linux](https://github.com/pyocd/pyOCD/releases/download/v0.41.0/pyocd-linux-0.41.0.zip)
+    - [Windows](https://github.com/pyocd/pyOCD/releases/download/v0.41.0/pyocd-windows-0.41.0.zip)
 
 Debería quedar una estructura de directorios como la siguiente:
 ```
@@ -110,18 +113,7 @@ Plugin para Eclipse que permite obtener información acerca del estado de FreeRT
 
 Este paso sólo es requerido en Linux. Seguir [estas instrucciones](https://github.com/pyocd/pyOCD/tree/main/udev) para modificar los permisos de acceso a los dispositivos USB mediante las reglas udev, copiando el archivo `50-cmsis-dap.rules` en `/etc/udev/rules.d`.
 
-## pyOCD
-
-[PyOCD](https://github.com/mbedmicro/pyOCD) es una librería para depurar programas sobre microcontroladores ARM Cortex-M mediante CMSIS-DAP y un servidor gdb. Recomendamos usar [`pipx`](https://pipx.pypa.io/stable/) para instalarlo:
-```
-$ sudo apt install pipx
-$ pipx ensurepath
-$ pipx install pyocd
-```
-
-## Configuración adicional
-
-### Acceso al puerto serial
+## Acceso al puerto serial
 
 En Linux, para poder leer y escribir en el puerto serial sin ser _root_, agregar el usuario al grupo `dialout`:
 ```
